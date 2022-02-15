@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+  body { 
+  
+      box-sizing: border-box;
+      width: 100vw;
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+  }
+   .background-image
+   {
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
+    z-index: -1;
+    position: absolute;
+    top:3rem;
+    
+} 
+
+.header
+{
+  text-align: left;
+}
+.head
+{
+  /* text-decoration-line: underline;
+  text-decoration-style:double ;
+  text-decoration-color: #197CA7; */
+  font-size: 60px;
+  font-family:"Wallpoet";
+  color: #EBB94F;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+.navbar
+{
+    width:100vw;
+     background: linear-gradient(180deg, rgba(88, 0, 5, 0.455) 22.4%, rgba(103, 83, 82, 0.5) 91.67%); 
+    display: inline-flex;
+    justify-items: center;
+}
+.logo
+{
+    width: 100px;
+    height: 50px;
+    
+}
+.logo-image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+#content
+{
+  border: 5px solid white;
+  width:37%;
+  height:fit-content;
+  padding: 2px 20px 20px 30px;
+  border-radius: 30px;
+  font-family:"Rubik Mono One" ;
+  color: #fff;
+  background-color: #EBB94F;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 23px;
+}
+@media(max-width:870px)
+{
+  .head,.header,#content
+  {
+    width:100%;
+    display: block;
+  }
+  body
+   {
+      padding:0%
+    
+  }
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+body{
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+   height: max-content;
+    
+}
+div{
+    display: inline-block;
+}
+.navbar
+{
+    width:100vw;
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-items: center;
+
+}
+.logo
+{
+    width: 100px;
+    height: 100px;
+    
+}
+.logo-image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.questionNo{
+    margin: 0;
+    font-size: 45px;
+    font-family: 'Russo One', sans-serif;
+    color: #31A3D3;
+}
+.title{
+    padding: 10px 50px;
+    padding-top: 30px;
+}
+
+.question{
+    font-family: 'Russo One', sans-serif;
+    color: #197CA7;
+    font-size: 2rem;
+    opacity: 0.69;
+}
+.question>p{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+.content{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4rem 6rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+
+.form-div{
+    display: flex;
+    align-items: center;
+}
+.form{
+    width: 100%;
+}
+.submit-box{
+    
+    width: 100%;
+    padding-top: 2rem;
+    text-align: center;
+}
+.answer-box{
+    width: 100%;
+    column-count: 2;
+}
+.answers{
+    margin: 15px;
+    width: 80%;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #31A3D3;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 5px 100px;
+    
+}
+
+
+.radio-button{
+   vertical-align: middle;
+   height: 25px;
+   width: 25px;
+}
+.answers>p{
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+}
+.answer-container{
+    width: 100%;
+}
+
+.submit{
+    
+    height: 100px;
+    width: 20%;
+    background: #31A3D3;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: none;
+    padding:1rem;
+    padding:auto 1rem ;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    color: white;
+   margin: 0 auto; 
+   
+}
+.background-image{
+    width: 100vw;
+    height: 102%;
+    object-fit:cover;
+    z-index: -1;
+    position: absolute;
+}
+@media (max-width:870px){
+    .answer-box{
+        column-count: 1;
+    }
+    .content{
+        padding: 1.5rem;
+    }
+    .answers>p{
+        font-size: 17px;
+    }
+}

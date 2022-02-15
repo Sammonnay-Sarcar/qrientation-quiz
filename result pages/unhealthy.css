@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+body
+ { 
+  box-sizing: border-box;
+  width: 100vw;
+  margin: 0;
+  height: 100vh;
+
+}
+.background-image
+{
+width: 100vw;
+height: 100vh;
+object-fit:cover;
+z-index: -1;
+position: absolute;
+}
+.logo
+{
+    width: 100px;
+    height: 50px;
+    
+}
+.logo-image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.header
+{
+  text-align: left;
+}
+.head
+{
+  text-decoration-line: underline;
+  text-decoration-style:double ;
+  text-decoration-color: #b0bbc0;
+  font-size: 43px;
+  font-family:"Rubik Mono One";
+  color:#197CA7;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+.navbar
+{
+    width:100vw;
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-items: center;
+}
+#content
+{
+  border: 5px solid white;
+  width:37%;
+  height:fit-content;
+  padding: 2px 30px 30px px;
+  border-radius: 30px;
+  font-family:"Revalia" ;
+  color: #fff;
+  background-color: #197CA7;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 23px;
+}
+@media(max-width:870px)
+{
+  .head,.header,#content
+  {
+    width:100%;
+    display: block;
+  }
+  body
+   {
+      padding: 0;
+    
+  }
+}

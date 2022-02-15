@@ -1,0 +1,100 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HEALTH</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="health.css" />
+  </head>
+  <body>
+    <img src="background-health.jpeg" class="background-image" alt="" />
+    <div class="navbar">
+      <div class="logo">
+        <img src="mega_logo.png" class="logo-image" alt="" />
+      </div>
+      <div class="title">
+        <h3 class="questionNo">QUESTION <%=post.no%></h3>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="question">
+        <p><%=post.question %></p>
+      </div>
+      <div class="form-div">
+        <form action="/health" method="post" class="form">
+          <div class="answer-box">
+            <div class="answer-container">
+              <input
+                type="radio"
+                name="answerRadio"
+                id="first"
+                value="<%= post.option[0].value%>"
+                class="radio-button"
+              />
+              <label for="answerRadio">
+                  <div class="answers" name="answer">
+                <p><%= post.option[0].text %></p>
+              </div>
+              </label>
+            
+            </div>
+            <div class="answer-container">
+              <input
+                type="radio"
+                name="answerRadio"
+                id="second"
+                value="<%= post.option[1].value%>"
+                class="radio-button"
+              />
+              <label for="answerRadio">
+                  <div class="answers" name="answer">
+                <p><%= post.option[1].text %></p>
+              </div>
+              </label>
+            
+            </div>
+            <div class="answer-container">
+              <input
+                type="radio"
+                name="answerRadio"
+                id="third"
+                value="<%= post.option[2].value%>"
+                class="radio-button"
+              />
+              <label for="answerRadio">
+                  <div class="answers" name="answer">
+                <p><%= post.option[2].text %></p>
+              </div>
+              </label>
+            
+            </div>
+            <div class="answer-container">
+              <input
+                type="radio"
+                name="answerRadio"
+                id="fourth"
+                value="<%= post.option[3].value%>"
+                class="radio-button"
+              />
+              <label for="answerRadio">
+                  <div class="answers" name="answer">
+                <p><%= post.option[3].text %></p>
+              </div>
+              </label>
+            
+            </div>
+          </div>
+          <div class="submit-box">
+            <button class="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="health.js" async defer></script>
+  </body>
+</html>

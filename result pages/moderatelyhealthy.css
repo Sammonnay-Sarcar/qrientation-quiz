@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+body
+ { 
+  box-sizing: border-box;
+  width: 100vw;
+  margin: 0;
+  height: 100vh;
+
+}
+.background-image
+{
+width: 100vw;
+height: 100vh;
+object-fit:cover;
+z-index: -1;
+position: absolute;
+}
+
+.navbar
+{
+    width:100vw;
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-items: center;
+}
+.logo
+{
+    width: 100px;
+    height: 50px;
+    
+}
+.logo-image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.header
+{
+  text-align: left;
+}
+.head
+{
+  text-decoration-line: underline;
+  text-decoration-style:double ;
+  text-decoration-color: #c3dbe6;
+  font-size: 45px;
+  font-family:"Rubik Mono One";
+  color:#197CA7;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+#content
+{
+  border: 5px solid white;
+  width:43%;
+  height:fit-content;
+  padding: 2px 20px 20px 20px;
+  border-radius: 30px;
+  font-family:"Revalia" ;
+  color: #fff;
+  background-color: #197CA7;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 25px;
+}
+@media(max-width:870px)
+{
+  .head,.header,#content
+  {
+    width:100%;
+    display: block;
+  }
+  body
+   {
+      padding: 0;
+    
+  }
+}

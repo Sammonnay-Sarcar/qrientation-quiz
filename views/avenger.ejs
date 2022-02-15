@@ -1,0 +1,59 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>AVENGER</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="avenger.css"/>
+  </head>
+  <body>
+    <img src="background-avenger.jpeg" class="background-image" alt="" />
+    <div class="navbar">
+      <div class="logo">
+        <img src="mega_logo.png" class="logo-image" alt="" />
+      </div>
+      <div class="title">
+        <h3 class="questionNo">QUESTION <%=post.no%></h3>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="question">
+        <p><%=post.question %></p>
+      </div>
+      <div class="form-div">
+        <form action="/avenger" method="post" class="form">
+          <div class="answer-box">
+            <%for(var i=0;i<post.option.length;i++){%>
+
+            <div class="answer-container">
+              <input
+                type="radio"
+                name="answerRadio"
+                id="first"
+                value="<%= post.option[i].value%>"
+                class="radio-button"
+              />
+              <label for="answerRadio">
+                  <div class="answers" name="answer">
+                <p><%= post.option[i].text %></p>
+              </div>
+              </label>
+            
+            </div>
+          <%}%>
+            
+          </div>
+          <div class="submit-box">
+            <button class="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="avenger.js" async defer></script>
+  </body>
+</html>

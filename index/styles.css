@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+body{
+   
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    padding: 2px;
+    font-family: 'Revalia', cursive;
+}
+.header{
+    text-align: center;
+    
+    background: linear-gradient(180deg, rgba(26, 164, 224, 0.48) 49.48%, rgba(26, 164, 224, 0) 100%);
+
+}
+.head{
+    font-family: 'Russo One', sans-serif;
+    font-size: 4rem;
+    color: black;
+    mix-blend-mode: overlay;
+    filter: drop-shadow(8px 7px 4px rgba(0, 0, 0, 0.25));
+    margin: 0;
+}
+.content{
+    display: flex;
+    column-count: 4;
+    width: 100%;
+    height: fit-content;
+    padding-top: 5rem;
+}
+.content-box{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    margin: 5px;
+    height: 25rem;
+    padding: 2px;
+}
+.content-box-image{
+    width:100%;
+    height: 70%;
+}
+.content-box-button{
+   
+    width: 100%;
+    height: 20%;
+
+}
+.content-box-button{
+    text-align: center;
+    position: relative;
+    bottom: -2rem;
+}
+.content-box-button>h3{
+    color: white;
+}
+.button{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    border: none;
+    background: linear-gradient(180deg, #1F45CD 56.25%, rgba(31, 69, 205, 0) 100%);
+    box-shadow: 0px 13px 6px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+.button>h3{
+    font-family: 'Revalia', cursive;
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
+.image{
+    object-fit: cover;
+    height: 80%;
+    width: 80%;
+    margin: auto 0;
+    border-radius: 141px;
+}
+.background{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: normal;
+    box-shadow: 0px 17px 4px rgba(0, 0, 0, 0.25)
+}
+.content-box-image{
+    text-align: center;
+
+}
+@media(max-width:870px) {
+    .content{
+        display: block;
+        column-count:2;
+    }
+    .content-box{
+        width:100%;
+        display: inline-block;
+    }
+}
